@@ -1,0 +1,113 @@
+nav {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	background-color: black;
+	font-family: 'IM Fell English', serif;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+#logo {
+	width: 85%;
+	height: auto;
+	padding: 2rem 2.5rem;
+	transition: 0.3s;}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 2rem;
+}
+
+i {
+	font-size: 1.7rem;
+	padding: 0 1.25rem;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+.main-nav {	
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.main-nav li {
+	padding: 0 1.5rem;
+}
+
+.main-nav li a:hover {
+	color: #d7a544;
+}
+
+.social-search {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.social-links {
+	height: 2rem;
+	width: auto;
+	overflow: hidden;
+}
+
+.slide a i {
+	display: block;
+	transition: 0.3s
+}
+
+.slide a:hover i, a:focus i {
+	transform: translateY(-75%);
+}
+
+.twitter a i:after {
+	display: block;
+	color: #d7a544;
+	content: "\f099";
+	transform: translateY(50%);
+}
+
+.facebook a i:after {
+	display: block;
+	color: #d7a544;
+	content: "\f39e";
+	transform: translateY(50%);
+}
+
+.tumblr a i:after {
+	display: block;
+	color: #d7a544;
+	content: "\f173";
+	transform: translateY(50%);
+}
+
+.insta a i:after {
+	display: block;
+	color: #d7a544;
+	content: "\f16d";
+	transform: translateY(50%);
+}
+
+.search {
+	color: white;
+	padding: 0 2rem;
+	cursor: pointer;	
+}
+
+.search i {
+	font-size: 2rem;
+}
+
+.search:hover {
+	color: #d7a544;
+}
