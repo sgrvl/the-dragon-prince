@@ -46,7 +46,7 @@ body {
 }
 
 .dragon-bg img {
-	width: 100%;
+	width: 105%;
 	height: auto;
 	transform: scale(115%) translateY(5rem);
 }
