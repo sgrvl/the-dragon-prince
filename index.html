@@ -7,15 +7,34 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> 	
 </head>
 <body>
-	<div id="nav-placeholder"></div>
+	<div id="nav-placeholder" style="position: fixed; z-index: 9999"></div>
 	<script>
 		$(function(){
 		  $("#nav-placeholder").load("navbar.html");
 		});
 	</script>
 
-	<section>
-		<h2>asdsg</h2>
+	<section class="hero">
+		<div id="particles-js"></div>
+		<div id="particles-js2"></div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script>
+			particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+			  console.log('callback - particles.js config loaded');
+			});
+
+			particlesJS.load('particles-js2', 'particlesjs-config2.json', function() {
+			  console.log('callback - particles.js2 config loaded');
+			});
+		</script>
+		<<div class="hero-logo"></div>
+
+		<div class="hero-charac"></div>
+		<div class="dragon-bg"></div>
+		<div class="netflix-logo" style="display: none"><img src="img/NowStreamingBlack.png"></div>
+	</section>
+	<section class="padding">
+		<div></div>
 	</section>
 </body>
 </html>

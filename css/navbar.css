@@ -10,8 +10,9 @@ nav {
 
 #logo {
 	width: 85%;
+	min-width: 20rem;
 	height: auto;
-	padding: 2rem 2.5rem;
+	padding: 5%;
 	transition: 0.3s;}
 
 .logo {
@@ -104,10 +105,34 @@ ul {
 	cursor: pointer;	
 }
 
+.mobile {
+	display: none;
+}
+
 .search i {
 	font-size: 2rem;
 }
 
 .search:hover {
 	color: #d7a544;
+}
+
+@media screen and (max-width: 900px) {
+	.main-nav, .social-links {
+		display: none;
+	}
+
+	.social-search {
+		grid-column: 3/4;
+	}
+
+	.search {
+		display: flex;
+		padding: 0 2rem 0 0;
+	}
+
+	.mobile {
+		display: block;
+	}
+
 }
