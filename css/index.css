@@ -46,9 +46,9 @@ body {
 }
 
 .dragon-bg img {
-	width: 105%;
+	width: 110%;
 	height: auto;
-	transform: scale(115%) translateY(5rem);
+	transform: scale(120%) translateY(5rem);
 }
 
 .hero-links {
