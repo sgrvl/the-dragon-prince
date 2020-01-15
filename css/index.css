@@ -1,9 +1,11 @@
-.hero {
-	display: flex;
-	flex-direction: column;
+body {
+	background-color: #12161a;
 }
 
+
 #particles-js {
+	position: absolute;
+	height: 100vh;
 	background-color: black;
 	mix-blend-mode: screen;
 	z-index: 2;
@@ -17,41 +19,128 @@
 	z-index: 3;
 }
 
-.hero-logo {
-	height: 105vh;
-	width: 100%;
+
+.hero-logo {	
 	position: absolute;
-	background-image: url(../img/home-hero-logo.png);
-	background-size: cover;
 	z-index: 1;
 }
 
-.netflix-logo img {	
-	top: 75%;
-	width: 30%;
+.hero-logo img {
+	width: 100%;
 	height: auto;
-	position: absolute;
-	z-index: 1;
 }
 
 .hero-charac {
-	height: 105vh;
-	width: 100%;
 	position: absolute;
-	background-image: url(../img/home-hero-characters-4.png);
-	background-size: cover;
 	z-index: 1;
 }
 
+.hero-charac img {
+	width: 100%;
+	height: auto;
+	transform: scale(105%) translateY(5rem);
+}
+
 .dragon-bg {
-	height: 105vh;
+	position: absolute;
+}
+
+.dragon-bg img {
+	width: 100%;
+	height: auto;
+	transform: scale(112%) translateY(5rem);
+}
+
+.hero-links {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 5;
+	display: grid;
+	grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+}
+
+.watch-box a {
+	width: 100%;
+	height: 100%;
+	grid-area: 3/3/4/4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.netflix-logo {
+	grid-area: 3/3/4/4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10rem;
+}
+
+.netflix-logo img {
+	width: 20%;
+	height: auto;
+	position: absolute;
+}
+
+#scene {
+	overflow: hidden;	
+}
+
+.divider {
+	height: 115vh;
 	width: 100%;
 	position: absolute;
-	background-image: url(../img/home-hero-bg-4.jpg);
-	background-size: cover;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.watch-box {
+	grid-area: 3/2/4/3;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {	
+	padding-top: 1.5rem;
+	color: white;
+	font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.watch-box a {
+	width: 90px;
+	height: 90px;
+}
+
+.play-arrow:hover {
+	transform: scale(110%);
+	transition: 0.3s;	
+}
+
+.play-arrow:hover .circle{
+	border: 3px solid rgba(255,255,255,.6);
+}
+
+
+.circle {
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	border: 3px solid rgba(255,255,255,1);
+}
+
+.arrow-right {
+  	border-top: 10px solid transparent;
+  	border-bottom: 10px solid transparent;  
+  	border-left: 15px solid white;  	
+  	transform: translate(37px, 32px);
 }
 
 .padding {
 	height: 400vh; /* just padding so I can scroll */
-	background-color: black
 }
