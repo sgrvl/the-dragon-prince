@@ -38,7 +38,7 @@ body {
 .hero-charac img {
 	width: 100%;
 	height: auto;
-	transform: scale(105%) translateY(5rem);
+	transform: scale(1.05) translateY(5rem);
 }
 
 .dragon-bg {
@@ -48,7 +48,7 @@ body {
 .dragon-bg img {
 	width: 100%;
 	height: auto;
-	transform: scale(120%) translateY(5rem);
+	transform: scale(1.25) translateY(5rem);
 }
 
 .hero-links {
@@ -83,7 +83,7 @@ body {
 	position: absolute;
 }
 
-#scene {
+.scene {
 	overflow: hidden;	
 }
 
