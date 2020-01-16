@@ -28,13 +28,16 @@
 			<div id="particles-js"></div>
 			<div id="particles-js2"></div>		
 			<script>
-				particlesJS.load('particles-js', 'particlesjs-config.json', function() {
-				  console.log('callback - particles.js config loaded');
-				});
+				if ($(window).width() > 900 ) {
+					particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+					  console.log('callback - particles.js config loaded');
+					});
 
-				particlesJS.load('particles-js2', 'particlesjs-config2.json', function() {
-				  console.log('callback - particles.js2 config loaded');
-				});
+					particlesJS.load('particles-js2', 'particlesjs-config2.json', function() {
+					  console.log('callback - particles.js2 config loaded');
+					});
+				} else {					
+				}				
 			</script>
 		</div>			
 		
@@ -47,20 +50,27 @@
 				</a>
 				<span class="hero-text">Watch Season 3 Trailer</span>
 			</div>
-			<div class="netflix-logo">
-				<a href="https://www.netflix.com/ca/title/80212245" target="_blank"><img src="img/NowStreamingBlack.png"></a>
-			</div>			
-			
+			<div class="netflix-wrap">
+				<a href="https://www.netflix.com/ca/title/80212245" target="_blank">
+					<div class="netflix-logo"></div>
+					<span>WATCH NOW &#10095;</span>
+				</a>
+			</div>
 		</div>	
 
+		<div class="mobile-bg-wrap">
+			<div class="mobile-bg"></div>
+		</div>
+
 		<ul id="scene" class="scene">
-			<li class="hero-logo" data-depth="0.0"><img src="img/home-hero-logo.png"></li>
-			<li class="hero-charac" data-depth="0.1"><img src="img/home-hero-characters-4.png"></li>
-			<li class="dragon-bg" data-depth="0.15"><img src="img/home-hero-bg-4.jpg"></li>
-		</ul>		
+			<li class="hero-logo" data-depth="0.0"></li>
+			<li class="hero-charac" id="charac" data-depth="0.1"></li>
+			<li class="dragon-bg" id="bg" data-depth="0.15"></li>
+		</ul>				
 		<script type="text/javascript">
 			var scene = document.getElementById('scene');
 			var parallaxInstance = new Parallax(scene);
+			
 		</script>			
 	</section>
 

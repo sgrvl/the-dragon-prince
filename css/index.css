@@ -2,11 +2,7 @@ body {
 	background-color: #12161a;
 }
 
-.particles {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-}
+
 
 #particles-js {
 	position: absolute;
@@ -28,37 +24,97 @@ body {
 	left: 0;
 }
 
-
-.hero-logo {	
-	position: absolute;
-	z-index: 1;
-}
-
-.hero-logo img {
+.hero {
+	height: 100vh;
 	width: 100%;
-	height: auto;
 }
 
-.hero-charac {
-	position: absolute;
-	z-index: 1;
-}
-
-.hero-charac img {
+.scene {
+	overflow: hidden;
+	height: 105vh;
 	width: 100%;
-	height: auto;
-	transform: scale(1.05) translateY(5rem);
 }
 
-.dragon-bg {
+@media screen and (min-width: 900px) {
+	.hero-logo {	
+		height: 125%;
+		width: 125%;
+		background-image: url(../img/home-hero-logo.png);
+		background-position: center;
+		background-size: calc(2880px*0.8) calc(1717px*0.8);
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	.hero-charac {
+		height: 125%;
+		width: 125%;
+		background-image: url(../img/home-hero-characters-4.png);
+		background-position: center;
+		background-size: calc(2880px*0.8) calc(1717px*0.8);
+		background-repeat: no-repeat;
+		margin-left: -12.5%;
+		z-index: 1;
+	}
+
+	.dragon-bg {
+		height: 125%;
+		width: 125%;
+		background-image: url(../img/home-hero-bg-4.jpg);
+		background-position: center;
+		background-size: calc(2880px*0.8) calc(1717px*0.8);
+		background-repeat: no-repeat;
+		margin-left: -12.5%;
+	}
+
+	.hero-text {	
+		padding-top: 1.5rem;
+		color: white;
+		font-size: 1.8rem;
+	    font-family: 'Lato', sans-serif;
+	    font-weight: 300;
+	}
+
+	.netflix-wrap {
+		grid-area: 3/3/4/4;
+		padding: 15rem 4rem 0 4rem;
+	}
+
+	.netflix-logo {
+		height: 32%;
+		background-image: url(../img/NowStreamingBlack.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.netflix-wrap span {
+		display: none;
+	}
+
+	.watch-box {
+		grid-area: 3/2/4/3;			
+	}	
+
+	.divider {
+		height: 108vh;
+	}
+}
+
+.mobile-bg-wrap {
 	position: absolute;
+	height: 100vh;
+	width: 100%;
 }
 
-.dragon-bg img {
+.mobile-bg {
 	width: 100%;
-	height: auto;
-	transform: scale(1.25) translateY(5rem);
+	height: 80vh;
+	background-image: url(../img/home-mobile-2.jpg); 
+	background-position: center;
+	background-size: calc(1200px*0.72) calc(1132px*0.72);
+	background-repeat: no-repeat;
 }
+
 
 .hero-links {
 	width: 100%;
@@ -78,26 +134,8 @@ body {
 	align-items: center;
 }
 
-.netflix-logo {
-	grid-area: 3/3/4/4;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 10rem;
-}
 
-.netflix-logo img {
-	width: 20%;
-	height: auto;
-	position: absolute;
-}
-
-.scene {
-	overflow: hidden;	
-}
-
-.divider {
-	height: 115vh;
+.divider {	
 	width: 100%;
 	position: absolute;
 	z-index: 3;
@@ -106,20 +144,85 @@ body {
 	justify-content: flex-end;
 }
 
-.watch-box {
-	grid-area: 3/2/4/3;
-	display: flex;
-	flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 900px){
+	.watch-box {
+		grid-area: 2/2/3/3;	
+	}
+
+	.hero-text {	
+		display: none;
+	}
+
+	.netflix-wrap {
+		padding-top: 5rem;
+		grid-area: 3/1/4/4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.netflix-logo {	
+		width: calc(4002px*0.15);
+		height: calc(480px*0.15);
+		background-image: url(../img/Netflix-Now-Streaming-image.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-bottom: 2rem;
+	}
+
+	.netflix-wrap span {
+		background-color: #D81F26;
+		padding: 1.5rem;
+		font-size: 2rem;
+		font-weight: bold;
+		font-family: 'lato', sans-serif;
+	}
+
+	.netflix-wrap a {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.divider {
+		height: 80%;
+		width: 200%;
+	}
 }
 
-.hero-text {	
-	padding-top: 1.5rem;
-	color: white;
-	font-size: 1.8rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+@media screen and (-webkit-device-pixel-ratio : 3){
+	.divider {
+		height: 75%;
+	}
 }
+
+@media screen and (max-width: 600px) {
+
+	.mobile-bg {
+		background-size: calc(1200px*0.5) calc(1132px*0.5);
+	}
+
+	.netflix-logo {	
+		width: calc(4002px*0.1);
+		height: calc(480px*0.1);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.netflix-logo {
+		width: calc(4002px*0.075);
+		height: calc(480px*0.075);
+	}
+}
+
+.watch-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 
 .watch-box a {
 	width: 90px;
@@ -144,6 +247,8 @@ body {
 }
 
 .arrow-right {
+	height: 0;
+	width: 0;
   	border-top: 10px solid transparent;
   	border-bottom: 10px solid transparent;  
   	border-left: 15px solid white;  	
