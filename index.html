@@ -4,20 +4,28 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script src="js/youtube.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>
+		/* ~~ Black fade-in on page load ~~ */
+		document.addEventListener("DOMContentLoaded",function(){
+			document.getElementById('fade').style.opacity = "0";
+			document.getElementById('fade').style.zIndex = "-99";
+		});
+	</script>
 </head>
-<body>
-	<div id="nav-placeholder" style="position: fixed; z-index: 9999"></div>
+<body id="main">
+	<div class="fade" id="fade"></div>
+
+	<div id="nav-placeholder" style="position: fixed; z-index: 999"></div>
 	<script>
 		$(function(){
 		  $("#nav-placeholder").load("navbar.html");
 		});
-	</script>
-
-	
-	
+	</script>	
 	<section class="hero">
 
 		<div class="divider">
@@ -40,14 +48,18 @@
 				}				
 			</script>
 		</div>			
-		
-		<div class="hero-links">
+		<div class="ytVideo" id="ytVideo">
+			<i class="fas fa-times" id="close"></i>
+			<iframe id="video" width="1280" height="720" src="https://www.youtube.com/embed/avqpvV81_kk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+
+		</div>
+		<div class="hero-links">					
 			<div class="watch-box">
-				<a href="https://www.youtube.com/watch?v=avqpvV81_kk" class="play-arrow">
+				<a class="play-arrow" id="play">
 					<div class="circle">
 						<div class="arrow-right"></div>
 					</div>
-				</a>
+				</a>				
 				<span class="hero-text">Watch Season 3 Trailer</span>
 			</div>
 			<div class="netflix-wrap">
@@ -69,15 +81,25 @@
 		</ul>				
 		<script type="text/javascript">
 			var scene = document.getElementById('scene');
-			var parallaxInstance = new Parallax(scene);
-			
-		</script>			
+			var parallaxInstance = new Parallax(scene);			
+		</script>
+
+
 	</section>
 
 	<section class="padding">
-		<div></div>
-	</section>
 
-	
+	</section>
+	<script type="text/javascript">
+		document.getElementById('play').addEventListener('click',function(){
+			document.getElementById('ytVideo').style.display = 'flex';
+			
+		});
+
+		document.getElementById('close').addEventListener('click',function() {
+			document.getElementById('ytVideo').style.display = 'none';
+			document.getElementById('video').pauseVideo();			
+		});
+	</script>
 </body>
 </html>

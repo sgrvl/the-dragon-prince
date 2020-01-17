@@ -3,6 +3,15 @@ body {
 }
 
 
+.fade {
+	position: absolute;
+	background-color: black;
+	height: 300%;
+	width: 100%;
+	z-index: 9999;
+	opacity: 1;
+	transition: 2s;
+}
 
 #particles-js {
 	position: absolute;
@@ -115,6 +124,31 @@ body {
 	background-repeat: no-repeat;
 }
 
+.ytVideo {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+.ytVideo i {
+	position: absolute;
+	color: white;
+	top: 0;
+	right: 0;
+	padding: 2rem;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.ytVideo i:hover {
+	opacity: 1;
+}
 
 .hero-links {
 	width: 100%;
@@ -132,6 +166,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 
@@ -255,6 +290,3 @@ body {
   	transform: translate(37px, 32px);
 }
 
-.padding {
-	height: 400vh; /* just padding so I can scroll */
-}
