@@ -226,6 +226,12 @@
 	}
 }
 
+@media screen and (-webkit-device-pixel-ratio : 3){
+	.divider {
+		max-height: 75%;
+	}
+}
+
 @media screen and (max-width: 600px) {
 
 	.mobile-bg {
