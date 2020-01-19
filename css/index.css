@@ -232,6 +232,12 @@
 	}
 }
 
+@media screen and (max-height: 650px) {
+		.divider {
+		max-height: 80%;
+	}
+}
+
 @media screen and (max-width: 600px) {
 
 	.mobile-bg {
