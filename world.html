@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>The World ‒ The Dragon Prince</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> 	
-</head>
-<body>
-	<div id="nav-placeholder"></div>
-	<script>
-		$(function(){
-		  $("#nav-placeholder").load("navbar.html");
+	<link rel="stylesheet" type="text/css" href="css/world.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<script src="js/navbar.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script src="js/aos.js"></script>
+	
+	<script>		
+		/* ~~ Black fade-in on page load ~~ */
+		document.addEventListener("DOMContentLoaded",function(){
+			document.getElementById('fade').style.opacity = "0";
+			document.getElementById('fade').style.zIndex = "-99";
 		});
-	</script>
+		/* ~~ navbar load ~~ */
+		$(function(){
+		  $("#nav-placeholder").load("navbar.html");		  
+		});
 
-	<section>
-		<h2>asdsg</h2>
-	</section>
+
+	</script>
+</head>
+<body id="main">
+	<div class="fade" id="fade"></div>
+	<div id="nav-placeholder" style="position: fixed; z-index: 999"></div>	
 </body>
 </html>

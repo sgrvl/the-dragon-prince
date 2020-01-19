@@ -6,17 +6,18 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<script src="https://kit.fontawesome.com/4aff35e256.js" crossorigin="anonymous"></script>
 	<script src="js/navbar.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>	
 </head>
 <body>
 	<nav>
 		<a href="index.html" class="logo">
 			<img id="logo" src="img/logo-dragonprince.png">
 		</a>
-		<ul class="main-nav">
-			<li><a href="news.html">NEWS</a></li>
-			<li><a href="world.html">THE WORLD</a></li>
-			<li><a href="characters.html">CHARACTERS</a></li>
-			<li><a href="cast-crew.html">CAST & CREW</a></li>
+		<ul class="main-nav" id="nav">
+			<li><a class="link" id="news" href="news.html">NEWS</a></li>
+			<li><a class="link" id="world" href="world.html">THE WORLD</a></li>
+			<li><a class="link" id="characters" href="characters.html">CHARACTERS</a></li>
+			<li><a class="link" id="cast-crew" href="cast-crew.html">CAST & CREW</a></li>
 		</ul>
 		<div class="social-search">
 			<ul class="social-links">
@@ -31,5 +32,6 @@
 			</div>
 		</div>			
 	</nav>
+	
 </body>
 </html>

@@ -1,25 +1,3 @@
-html {
-	min-height: 100%;
-	max-width: 100vw;
-}
-
-body {
-	background-color: #12161a;
-	min-height: 100%;
-	max-width: 100vw;
-}
-
-
-.fade {
-	position: fixed;
-	background-color: black;
-	height: 100vh;
-	width: 100%;
-	z-index: 9999;
-	opacity: 1;
-	transition: 2s;
-}
-
 #particles-js {
 	position: absolute;
 	height: 100vh;

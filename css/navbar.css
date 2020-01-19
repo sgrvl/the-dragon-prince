@@ -24,6 +24,7 @@ a {
 	text-decoration: none;
 	color: white;
 	font-size: 2rem;
+	transition: 0.3s;
 }
 
 i {
@@ -48,6 +49,7 @@ ul {
 
 .main-nav li a:hover {
 	color: #d7a544;
+	transition: 0.3s;
 }
 
 .social-search {
@@ -102,7 +104,8 @@ ul {
 .search {
 	color: white;
 	padding: 0 2rem;
-	cursor: pointer;	
+	cursor: pointer;
+	transition: 0.3s;	
 }
 
 .mobile {
@@ -115,6 +118,7 @@ ul {
 
 .search:hover {
 	color: #d7a544;
+	transition: 0.3s;
 }
 
 @media screen and (max-width: 900px) {

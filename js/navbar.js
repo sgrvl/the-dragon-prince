@@ -14,3 +14,9 @@ function scrollFunction(){
 		logo.style.padding = "5%"
 	}
 };
+
+
+/* var news = document.getElementById('news');
+	var world = document.getElementById('world');
+	var characters = document.getElementById('characters');
+	var cast = document.getElementById('cast'); */
