@@ -85,6 +85,32 @@
 			</script>				
 		</section>
 
+		<section class="map">
+			<img class="map-overlay" src="img/Worldoverlay.png">
+			<img class="map-img" src="img/World.jpg">			
+		</section>
+
+		<section class="stone">
+			<div class="stone-wrap">
+				<div class="img-wrap">
+					<div id="particles-jsStone" class="smoke"></div>
+					<img src="img/stone.png">
+					<script>
+						if ($(window).width() > 900 ) {
+							particlesJS.load('particles-jsStone', 'particlesjs-configStone.json', function() {
+							  console.log('callback - particles.js config loaded');
+							});
+						}			
+					</script>	
+				</div>				
+				<div class="stone-text">
+					<h3>PRIMAL STONES</h3>
+					<p>To cast a spell, a mage needs primal energy. An Ocean mage may call upon the ebb and flow of the sea, a Sky mage the thundering churn of a storm. But in the dark of night, a Sun mage would struggle to conjure a simple flame — unless they possessed a Primal Stone.</p>
+					<p>Primal Stones are powerful artifacts that act as conduits to primal sources even when the source itself isn’t immediately available. They give a mage access to primal energy anywhere, any time: Sun magic in darkness, Earth magic at sea, for example. But Primal Stones are incredibly rare — only master mages can craft them, and the crafting rituals themselves have largely been lost to time.</p>
+				</div>
+			</div>			
+		</section>
+
 		<footer>
 			<p>&#169; 2019<img src="img/Wonderstorm-logo.png">, INC. </p>
 			<p>Terms of Use - Privacy Policy</p>
