@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<meta content="utf-8" http-equiv="encoding">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="format-detection" content="telephone=no"><meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"><meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 	<title>Cast & Crew ‒ The Dragon Prince</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/cast-crew.css">
+	<link rel="stylesheet" type="text/css" href="css/mobilemenu.css">
 	<link rel="stylesheet" type="text/css" href="css/aos.css">
 	<script src="js/navbar.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
@@ -28,7 +28,28 @@
 	</script>
 </head>
 <body id="main">
-	<div class="fade" id="fade"></div>
-	<div id="nav-placeholder" style="position: fixed; z-index: 999"></div>
+	<nav id="mobile-menu" class="mobile-menu">
+		<i class="fas fa-times x" id="menuclose"></i>
+		<ul class="mobile-menu-links">
+			<li><a id="news" href="news.html">NEWS</a></li>
+			<li><a id="world" href="world.html">THE WORLD</a></li>
+			<li><a id="characters" href="characters.html">CHARACTERS</a></li>
+			<li><a id="cast-crew" href="cast-crew.html">CAST & CREW</a></li>
+		</ul>			
+		<ul class="mobile-menu-social">
+			<li class=""><a href="https://twitter.com/thedragonprince" target="_blank"><i class="fab fa-twitter"></i></a></li>
+			<li class=""><a href="https://www.facebook.com/dragonprinceofficial" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+			<li class=""><a href="https://dragonprinceofficial.tumblr.com/" target="_blank"><i class="fab fa-tumblr"></i></a></li>
+			<li class=""><a href="https://www.instagram.com/dragonprinceofficial/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+		</ul>		
+	</nav>
+	<div id="wrap">
+		<div class="fade" id="fade"></div>
+		<div id="nav-placeholder" style="position: fixed; z-index: 999"></div>
+
+		<section style="height: 250vh">
+			<h1 style="color: white;padding-top: 20%">temp</h1>
+		</section>
+	</div>		
 </body>
 </html>
