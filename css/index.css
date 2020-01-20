@@ -215,6 +215,7 @@
 
 
 	.divider {
+		display: none;
 		height: 80%;
 		width: 200%;
 	}
