@@ -15,6 +15,42 @@ function scrollFunction(){
 	}
 };
 
+var burger = document.getElementById('burger');
+var menu = document.getElementById('mobile-menu');
+var wrap = document.getElementById('wrap');
+var close = document.getElementById('menuclose');
+var firstClick = true;
+
+burger.onclick = function() {		
+	wrap.style.transform = 'translate(-70%, -2.5%) scale(0.9)';	
+	document.body.style.position = 'fixed'
+	menu.style.zIndex = '15';
+	if (firstClick == true) {
+		firstClick = false;
+	} else {
+		menu.style.zIndex = '';
+		wrap.style.transform = '';		
+		document.body.style.position = '';
+		firstClick = true;
+	}
+};
+
+close.onclick = function() {
+	menu.style.zIndex = '';
+	wrap.style.transform = '';		
+	document.body.style.position = '';
+	firstClick = true;
+};
+
+
+
+/*function menu(){
+	var wrap = document.getElementById('wrap');
+	document.body.style.position = 'fixed'
+	wrap.style.transform = 'translate(-70%, -2.5%) scale(0.9)';
+	wrap.style.zIndex = '-1';
+};*/
+
 
 /* var news = document.getElementById('news');
 	var world = document.getElementById('world');

@@ -1,0 +1,37 @@
+.mobile-menu {
+	transform: translateX(40%);
+	width: 70%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	z-index: -5;
+}
+
+.mobile-menu a {
+	font-size: 3rem;
+}
+
+.mobile-menu-links li {
+	padding: 1.5rem;
+	list-style: none;
+}
+
+.mobile-menu-links {
+	display: flex;
+	flex-direction: column;
+}
+
+.x {
+	color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+.mobile-menu-social {
+	display: flex;
+}

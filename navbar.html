@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<script src="https://kit.fontawesome.com/4aff35e256.js" crossorigin="anonymous"></script>
 	<script src="js/navbar.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		
 </head>
 <body>
 	<nav>
@@ -14,10 +15,10 @@
 			<img id="logo" src="img/logo-dragonprince.png">
 		</a>
 		<ul class="main-nav" id="nav">
-			<li><a class="link" id="news" href="news.html">NEWS</a></li>
-			<li><a class="link" id="world" href="world.html">THE WORLD</a></li>
-			<li><a class="link" id="characters" href="characters.html">CHARACTERS</a></li>
-			<li><a class="link" id="cast-crew" href="cast-crew.html">CAST & CREW</a></li>
+			<li><a id="news" href="news.html">NEWS</a></li>
+			<li><a id="world" href="world.html">THE WORLD</a></li>
+			<li><a id="characters" href="characters.html">CHARACTERS</a></li>
+			<li><a id="cast-crew" href="cast-crew.html">CAST & CREW</a></li>
 		</ul>
 		<div class="social-search">
 			<ul class="social-links">
@@ -28,10 +29,9 @@
 			</ul>
 			<div class="search">
 				<i class="fas fa-search"></i>
-				<i class="fas fa-bars mobile"></i>
+				<i id="burger" class="fas fa-bars mobile burger"></i>
 			</div>
 		</div>			
-	</nav>
-	
+	</nav>	
 </body>
 </html>
