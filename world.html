@@ -30,6 +30,7 @@
 	</script>
 </head>
 <body id="main">
+	<!-- ~~~~~~~~mobile-menu~~~~~~~~ -->
 	<nav id="mobile-menu" class="mobile-menu">
 		<i class="fas fa-times x" id="menuclose"></i>
 		<ul class="mobile-menu-links">
@@ -45,13 +46,53 @@
 			<li class=""><a href="https://www.instagram.com/dragonprinceofficial/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 		</ul>		
 	</nav>
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<div id="wrap">
 		<div class="fade" id="fade"></div>
 		<div id="nav-placeholder" style="position: fixed; z-index: 999"></div>	
 
-		<section style="height: 250vh">
-			<h1 style="color: white;padding-top: 20%">temp</h1>
+		<section class="hero">
+			<div class="hero-text-wrap">
+				<h3 class="hero-text" data-aos="fade-up" data-aos-delay="1000">Long ago, the world was divided in two: in the west, the human kingdoms, and in the east, the magical lands of Xadia.<br> The two realms are split by a near-impassable river of fire and lava, and were defended by the King of the Dragons himself,<br> Thunder, until his fateful death...</h3>
+			</div>
+			<div class="black-overlay"></div>
+			<div class="ashes-wrap">
+				<div id="particles-js" class="ashes1"></div>
+				<div id="particles-js2" class="ashes2"></div>
+				<script>
+					if ($(window).width() > 900 ) {
+						particlesJS.load('particles-js', 'particlesjs-configWorld.json', function() {
+						  console.log('callback - particles.js config loaded');
+						});
+
+						particlesJS.load('particles-js2', 'particlesjs-configWorld2.json', function() {
+						  console.log('callback - particles.js2 config loaded');
+						});
+					}			
+				</script>	
+			</div>
+			<div class="scene-wrap">
+				<div id="scene" class="scene">
+					<div class="front" data-depth="0.3"></div>
+					<div class="mid" data-depth="0.2"></div>
+					<div class="back" data-depth="0.1"></div>								
+				</div>
+			</div>
+				
+			<script type="text/javascript">
+				var scene = document.getElementById('scene');
+				var parallaxInstance = new Parallax(scene);			
+			</script>				
 		</section>
+
+		<footer>
+			<p>&#169; 2019<img src="img/Wonderstorm-logo.png">, INC. </p>
+			<p>Terms of Use - Privacy Policy</p>
+			<p>Code remake by <a href="https://github.com/sgrvl/" target="_blank">Simon Gravel</a>, just for fun and practice.<br><a href="https://thedragonprince.com/" target="_blank">Source</a></p>
+		</footer>
 	</div>
+	<script>
+		AOS.init(); /* Fade up animation */
+	</script>
 </body>
 </html>
