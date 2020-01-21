@@ -136,8 +136,16 @@ body {
 
 .map {
 	height: 100%;
-	width: 100%;
+	width: 100vw;
 }
+
+.numbers-wrap {
+	position: absolute;
+	width: 100vw;
+	height: calc(100vw/1.91489);
+}
+
+/* ^^^ mapnumbers.css ^^^ */
 
 .map-overlay {
 	position: absolute;
@@ -153,6 +161,10 @@ body {
 
 @media screen and (max-width: 900px) {
 	.map-overlay {
+		display: none;
+	}
+
+	.smoke {
 		display: none;
 	}
 }
@@ -199,17 +211,42 @@ body {
 
 .stone-text p {
 	font-family: 'lato', sans-serif;
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 	line-height: 3rem;
-	padding: 2rem;
+	padding: 2rem 0;
 }
 
 .stone-text h3 {
 	font-family: 'IM Fell English', serif;
 	font-size: 3.5rem;
-	padding: 2rem;
+	padding: 2rem 0;
 	margin-bottom: -1rem;
 }
+
+@media screen and (max-width: 900px) {
+	.stone-wrap {
+		width: 95%;
+		flex-direction: column;
+		padding: 4rem 2rem 0 2rem;
+	}
+
+	.stone-text {
+		width: 100%;
+	}
+
+	.stone-text p {
+		font-size: 1.5rem;
+	}
+
+	.stone-text h3 {
+		font-size: 2.5rem;
+	}
+
+	.img-wrap img {
+		max-height: 100%;
+	}
+}
+
 
 /*~~~ footer style ~~~*/
 
