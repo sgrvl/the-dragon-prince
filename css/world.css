@@ -202,6 +202,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 2;
 }
 
 .stone-text {
@@ -247,6 +248,33 @@ body {
 	}
 }
 
+.stone-bg {
+	margin-top: -75vh;
+	height: 120%;
+	min-width: 100vw;
+	position: absolute;
+	background-image: linear-gradient(black,rgba(18,22,26,0.5), rgba(18,22,26,0.2)), url(../img/stones.jpg); 
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.primalSources {
+	min-height: 120vh;
+	width: 100%;
+	background-image: linear-gradient(#eae3f4,white);
+}
+
+.primalDivider {
+	margin-top: -16rem;
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	background-image: url(../img/primalDivider.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 /*~~~ footer style ~~~*/
 
@@ -260,6 +288,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	z-index: 2;
 }
 
 footer img {

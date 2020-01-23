@@ -15,6 +15,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script src="js/aos.js"></script>
+	
 
 	
 	<script>		
@@ -196,9 +197,13 @@
 				<div class="stone-text">
 					<h3 data-aos="fade-up" data-aos-delay="1200">PRIMAL STONES</h3>
 					<p data-aos="fade-up" data-aos-delay="1200">To cast a spell, a mage needs primal energy. An Ocean mage may call upon the ebb and flow of the sea, a Sky mage the thundering churn of a storm. But in the dark of night, a Sun mage would struggle to conjure a simple flame — unless they possessed a Primal Stone.</p>
-					<p data-aos="fade-up" data-aos-delay="1200">Primal Stones are powerful artifacts that act as conduits to primal sources even when the source itself isn’t immediately available. They give a mage access to primal energy anywhere, any time: Sun magic in darkness, Earth magic at sea, for example. But Primal Stones are incredibly rare — only master mages can craft them, and the crafting rituals themselves have largely been lost to time.</p>
+					<p data-aos="fade-up" data-aos-delay="1200">Primal Stones are powerful artifacts that act as conduits to primal sources even when the source itself isn’t immediately available. They give a mage access to primal energy anywhere, any time: Sun magic in darkness, Earth magic at sea, for example. But Primal Stones are incredibly rare — only master mages can craft them, and the crafting rituals themselves have largely been lost to time.</p>					
 				</div>
-			</div>			
+			</div>
+			<div class="stone-bg rellax" data-rellax-speed="-7" data-rellax-percentage="0.5" data-rellax-zindex="-3"></div>			
+		</section>
+		<section class="primalSources">
+			<div class="primalDivider"></div>			
 		</section>
 
 		<footer>
@@ -207,15 +212,15 @@
 			<p>Code remake by <a href="https://github.com/sgrvl/" target="_blank">Simon Gravel</a>, just for fun and practice.<br><a href="https://thedragonprince.com/" target="_blank">Source</a></p>
 		</footer>
 	</div>
+	<script src="js/world.js"></script>	
+	<script src="js/rellax.min.js"></script>
 	<script type="text/javascript">
 		if($(window).width() < 900) {
 			$('.number').removeAttr('data-aos');
 		}
-	</script>
-	<script>
+
 		AOS.init(); /* Fade up animation */
-	</script>
-	<script src="js/world.js"></script>	
-	
+		var rellax = new Rellax('.rellax');
+	</script>	
 </body>
 </html>
