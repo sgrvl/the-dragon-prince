@@ -1,15 +1,190 @@
 var i = 0;
+if ($(window).width() < 900 ) {
+	function infoClick1() {
+		var info = document.getElementById('info1');
+		if (i == 0) {		
+			info.style.opacity = '1';
+			info.style.pointerEvents = "auto";
+			info.classList.remove("num1");
+			i++;
+		} else {
+			info.style.opacity = '0';
+			info.style.pointerEvents = "none";
+			i--;
+		}
+	}
 
-function infoClick1() {
-	if (i == 0) {
-		document.getElementById('info1').style.opacity = '1';
-		i++;
-	} else {
-		document.getElementById('info1').style.opacity = '0';
-		i--;
-	}			
+	function infoClick2() {
+		var info = document.getElementById('info2');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num2");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick3() {
+		var info = document.getElementById('info3');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num3");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick4() {
+		var info = document.getElementById('info4');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num4");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick5() {
+		var info = document.getElementById('info5');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num5");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick6() {
+		var info = document.getElementById('info6');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num6");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick7() {
+		var info = document.getElementById('info7');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num7");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick8() {
+		var info = document.getElementById('info8');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num8");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick9() {
+		var info = document.getElementById('info9');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num9");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick10() {
+		var info = document.getElementById('info10');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num10");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick11() {
+		var info = document.getElementById('info11');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num11");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick12() {
+		var info = document.getElementById('info12');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num12");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick13() {
+		var info = document.getElementById('info13');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num13");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
+	function infoClick14() {
+		var info = document.getElementById('info14');
+			if (i == 0) {		
+				info.style.opacity = '1';
+				info.style.pointerEvents = "auto";
+				info.classList.remove("num14");
+				i++;
+			} else {
+				info.style.opacity = '0';
+				info.style.pointerEvents = "none";
+				i--;
+			}		
+	}
 }
-
+	
 function infoOver1() {
 	document.getElementById('info1').style.opacity = '1';	
 }

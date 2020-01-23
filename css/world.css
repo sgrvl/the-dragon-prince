@@ -2,10 +2,6 @@ body {
 	min-height: 100%;
 }
 
-#world {
-	color: #d7a544;
-}
-
 .hero {
 	position: block;
 	width: 100%;
@@ -131,6 +127,10 @@ body {
 	.hero-text {
 		font-size: 2rem;
 		width: 90%;
+	}
+
+	.ashes1, .ashes2 {
+		display: none;
 	}
 }
 
