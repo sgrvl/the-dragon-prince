@@ -1,3 +1,10 @@
-#world {
-	border-bottom: 2px solid white;
+#characters {
+	color: #d7a544;
+}
+
+@media screen and (max-width: 900px) {
+	#characters {
+		color: white;
+		border-bottom: 2px solid white;
+	}
 }

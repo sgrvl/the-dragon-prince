@@ -2,6 +2,17 @@ body {
 	min-height: 100%;
 }
 
+#world {
+	color: #d7a544;
+}
+
+@media screen and (max-width: 900px) {
+	#world {
+		color: white;
+		border-bottom: 2px solid white;
+	}
+}
+
 .hero {
 	position: block;
 	width: 100%;

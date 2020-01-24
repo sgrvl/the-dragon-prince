@@ -1,4 +1,11 @@
-#world {
-	border-bottom: 2px solid white;
+#news {
+	color: #d7a544;
+}
+
+@media screen and (max-width: 900px) {
+	#news {
+		color: white;
+		border-bottom: 2px solid white;
+	}
 }
 

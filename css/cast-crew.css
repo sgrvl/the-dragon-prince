@@ -1,3 +1,10 @@
-#world {
-	border-bottom: 2px solid white;
+#cast-crew {
+	color: #d7a544;
+}
+
+@media screen and (max-width: 900px) {
+	#cast-crew {
+		color: white;
+		border-bottom: 2px solid white;
+	}
 }
