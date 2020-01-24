@@ -17,10 +17,11 @@
 	
 	<script>		
 		/* ~~ Black fade-in on page load ~~ */
-		document.addEventListener("DOMContentLoaded",function(){
+		window.addEventListener('load',function(){
 			document.getElementById('fade').style.opacity = "0";
 			document.getElementById('fade').style.zIndex = "-99";
 		});
+
 		/* ~~ navbar load ~~ */
 		$(function(){
 		  $("#nav-placeholder").load("navbar.html");
