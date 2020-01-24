@@ -445,6 +445,7 @@ body {
 
 @media screen and (max-width: 900px) {
 	.sourcesDesc {
+		padding-top: 15rem;
 		margin-bottom: 0;
 	}
 
