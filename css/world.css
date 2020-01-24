@@ -455,7 +455,7 @@ body {
 .darkMagic {
 	width: 100%;
 	height: 80vh;
-	background-image: linear-gradient(#030303, #222);
+	background-image: linear-gradient(#070707, #222);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
