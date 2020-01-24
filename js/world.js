@@ -296,3 +296,38 @@ function infoOver14() {
 function infoOut14() {
 	document.getElementById('info14').style.opacity = '0';
 }
+
+var c = 0;
+
+function sky() {
+	var primal = document.getElementById('sky');
+	if (c == 0) {
+			primal.style.transform = 'rotateY(-180deg)';
+			c++;
+		} else {
+			primal.style.transform = '';
+			c--;
+		}	
+}
+
+function stars() {
+	var primal = document.getElementById('stars');
+	if (c == 0) {
+			primal.style.transform = 'rotateY(-180deg)';
+			c++;
+		} else {
+			primal.style.transform = '';
+			c--;
+		}	
+}
+
+function ocean() {
+	var primal = document.getElementById('ocean');
+	if (c == 0) {
+			primal.style.transform = 'rotateY(-180deg)';
+			c++;
+		} else {
+			primal.style.transform = '';
+			c--;
+		}	
+}

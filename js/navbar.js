@@ -25,10 +25,12 @@ burger.onclick = function() {
 	wrap.style.transform = 'translate(-70%, -2.5%) scale(0.9)';	
 	document.body.style.overflowY = 'hidden';
 	menu.style.zIndex = '15';
+	menu.style.visibility = 'visible';
 	if (firstClick == true) {
 		firstClick = false;
 	} else {
 		menu.style.zIndex = '';
+		menu.style.visibility = '';
 		wrap.style.transform = '';		
 		document.body.style.overflowY = '';
 		firstClick = true;
@@ -37,6 +39,7 @@ burger.onclick = function() {
 
 close.onclick = function() {
 	menu.style.zIndex = '';
+	menu.style.visibility = '';
 	wrap.style.transform = '';		
 	document.body.style.overflowY = '';
 	firstClick = true;
