@@ -234,7 +234,68 @@
 						</div>
 					</div>						
 				</div>
-			</div>			
+			</div>
+			<div class="sourcesDesc">
+				<h2>PRIMAL SOURCES</h2>
+				<p>All magic in the world draws upon the six Primal Sources, enormous, powerful entities of the natural world: the Sun, the Moon, the Stars, the Earth, the Sky, and the Ocean. The magical creatures of Xadia are all connected to a Primal Source, and their natures and powers reflect that source.</p>
+			</div>
+			<div class="sources">
+				<div class="flipCard" onclick="earth();">
+					<div class="flipCardInner leftMargin" id="earth">
+						<div class="flipCardFront earth">
+						</div>
+						<div class="flipCardBack">
+							<h3>THE EARTH</h3>
+							<p>Earth magic draws on the power and energy within the land itself. Earth magic comes from two major domains: the stone, minerals, crystals, and gems of the land, and the flora and fauna of the living world. Creatures connected to the Earth are patient, sometimes stubborn, and care deeply about the history and balance of the natural world.</p>
+						</div>
+					</div>						
+				</div>
+				<div class="flipCard" onclick="sun();">
+					<div class="flipCardInner centerMargin" id="sun">
+						<div class="flipCardFront sun"></div>
+						<div class="flipCardBack">
+							<h3>THE SUN</h3>
+							<p>Sun magic draws from the heat and energy of the Sun. Sun magic has a dual nature: it can conjure spells of light, growth, nurturing and transformation — or it can call upon fire, heat, and destruction. Sun-connected creatures are often intense and charismatic and make natural leaders.</p>
+						</div>
+					</div>						
+				</div>
+				<div class="flipCard" onclick="moon();">
+					<div class="flipCardInner" id="moon">
+						<div class="flipCardFront moon">
+						</div>
+						<div class="flipCardBack">
+							<h3>THE MOON</h3>
+							<p>Moon magic draws on the spirit and energy of the Moon, creating illusions, concealment spells, and connections with spirits. The Moon is cyclical in its strength, relating directly to lunar phases. Moon Primal creatures can be private and secretive, and are keenly aware of the power of appearances.</p>
+						</div>
+					</div>						
+				</div>
+			</div>
+			<div class="darkMagicDivider"></div>			
+		</section>
+		<section class="darkMagic">
+			<div class="darkMagicText">
+				<h2>DARK MAGIC</h2>
+				<p>Dark magic does not connect to any of the Primal Sources. Instead, it draws upon the power within magical creatures themselves. The ease and potency of dark magic caused humans to hunt and poach magical creatures to harvest their energy. Horrified by the practice, the elves and the dragons divided the continent and drove all humans out of Xadia.</p>
+			</div>
+			<div class="claudia"></div>
+			<canvas id="canvas" class="canvas"></canvas>
+			<script src="js/smoke.js"></script>
+			<script>
+				if($(window).width() > 900) {
+					var canvas = document.getElementById('canvas')
+					var ctx = canvas.getContext('2d')
+					canvas.width = 1000
+					canvas.height = innerHeight
+
+					var party = smokemachine(ctx, [255, 0, 255])
+					party.start() // start animating
+					party.setPreDrawCallback(function(dt){
+						party.addSmoke(1000/2, innerHeight*1.3, .5)
+						canvas.width = 1000
+						canvas.height = innerHeight*0.8
+					})
+				}
+			</script>
 		</section>
 
 		<footer>

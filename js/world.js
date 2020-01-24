@@ -331,3 +331,36 @@ function ocean() {
 			c--;
 		}	
 }
+
+function earth() {
+	var primal = document.getElementById('earth');
+	if (c == 0) {
+			primal.style.transform = 'rotateY(-180deg)';
+			c++;
+		} else {
+			primal.style.transform = '';
+			c--;
+		}	
+}
+
+function sun() {
+	var primal = document.getElementById('sun');
+	if (c == 0) {
+			primal.style.transform = 'rotateY(-180deg)';
+			c++;
+		} else {
+			primal.style.transform = '';
+			c--;
+		}	
+}
+
+function moon() {
+	var primal = document.getElementById('moon');
+	if (c == 0) {
+			primal.style.transform = 'rotateY(-180deg)';
+			c++;
+		} else {
+			primal.style.transform = '';
+			c--;
+		}	
+}
