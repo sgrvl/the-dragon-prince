@@ -305,7 +305,7 @@ function sky() {
 			primal.style.transform = 'rotateY(-180deg)';
 			c++;
 		} else {
-			primal.style.transform = '';
+			primal.style.transform = 'rotateY(0deg)';
 			c--;
 		}	
 }
@@ -316,7 +316,7 @@ function stars() {
 			primal.style.transform = 'rotateY(-180deg)';
 			c++;
 		} else {
-			primal.style.transform = '';
+			primal.style.transform = 'rotateY(0deg)';
 			c--;
 		}	
 }
@@ -327,7 +327,7 @@ function ocean() {
 			primal.style.transform = 'rotateY(-180deg)';
 			c++;
 		} else {
-			primal.style.transform = '';
+			primal.style.transform = 'rotateY(0deg)';
 			c--;
 		}	
 }
@@ -338,7 +338,7 @@ function earth() {
 			primal.style.transform = 'rotateY(-180deg)';
 			c++;
 		} else {
-			primal.style.transform = '';
+			primal.style.transform = 'rotateY(0deg)';
 			c--;
 		}	
 }
@@ -349,7 +349,7 @@ function sun() {
 			primal.style.transform = 'rotateY(-180deg)';
 			c++;
 		} else {
-			primal.style.transform = '';
+			primal.style.transform = 'rotateY(0deg)';
 			c--;
 		}	
 }
@@ -360,7 +360,7 @@ function moon() {
 			primal.style.transform = 'rotateY(-180deg)';
 			c++;
 		} else {
-			primal.style.transform = '';
+			primal.style.transform = 'rotateY(0deg)';
 			c--;
 		}	
 }
