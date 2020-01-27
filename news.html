@@ -11,9 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="css/mobilemenu.css">
 	<script src="js/navbar.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script src="js/aos.js"></script>
+	<script src="js/news.js"></script>
+	
 	
 	<script>		
 		/* ~~ Black fade-in on page load ~~ */
@@ -27,6 +27,7 @@
 		  $("#nav-placeholder").load("navbar.html");
 		});
 	</script>
+	
 </head>
 <body>
 	<nav id="mobile-menu" class="mobile-menu">
@@ -46,12 +47,46 @@
 	</nav>
 	<div id="wrap">
 		<div class="fade" id="fade"></div>
-
 		<div id="nav-placeholder" style="position: fixed; z-index: 999"></div>
 
-		<section style="height: 250vh">
-			<h1 style="color: white;padding-top: 20%">temp</h1>
+		<section class="heroSlider" id="bg">
+			<div class="sliderWrap">
+				<div class="sliderTitleWrap">
+					<a href=""><h1 class="sliderTitle">End Credit Sketches:"The Final Battle"</h1></a>
+					<a href=""><h1 class="sliderTitle">End Credit Sketches:"Dragonguard"</h1></a>
+					<a href=""><h1 class="sliderTitle">Design Turnarouds: Assorted Callums</h1></a>
+					<a href=""><h1 class="sliderTitle">End Credit Sketches:"Hearts of Cinder"</h1></a>
+					<a href="#" class="aTitle">READ ARTICLE &nbsp; &#129130;</a>
+				</div>
+				<div class="sliderButtonsWrap">					
+					<div class="sliderButtons" id="btn1" onclick="stop();mySlide(0);">
+						<h4 class="sliderButtonsText">End Credit Sketches: "The Final Battle"</h4>
+						<div class="loading"></div>
+					</div>
+					<div class="sliderButtons" id="btn2" onclick="stop();mySlide(1);">
+						<h4 class="sliderButtonsText">End Credit Sketches: "Dragonguard"</h4>
+						<div class="loading"></div>
+					</div>
+					<div class="sliderButtons" id="btn3" onclick="stop();mySlide(2);">
+						<h4 class="sliderButtonsText">Design Turnarouds: Assorted Callums</h4>
+						<div class="loading"></div>
+					</div>
+					<div class="sliderButtons" id="btn4" onclick="stop();mySlide(3);">
+						<h4 class="sliderButtonsText">End Credit Sketches:"Hearts of Cinder"</h4>
+						<div class="loading"></div>
+					</div>
+				</div>
+			</div>
+			<div class="imgWrap">
+				<div class="img1 imgSlide"></div>
+				<div class="img2 imgSlide"></div>
+				<div class="img3 imgSlide"></div>
+				<div class="img4 imgSlide"></div>
+			</div>
 		</section>
 	</div>
+	<script>
+		$("#btn1").click();//to start the slider
+	</script>
 </body>
 </html>

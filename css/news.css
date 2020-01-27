@@ -9,3 +9,156 @@
 	}
 }
 
+.heroSlider {
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;	
+	padding: 15%;	
+}
+
+.imgWrap {
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	max-width: 100%;
+	width: 100vw;	
+	z-index: -1;
+}
+
+.img1 {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url(../img/slider1.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 105%;
+	opacity: 0;
+}
+
+.img2 {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url(../img/slider2.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 105%;
+	opacity: 0;
+}
+
+.img3 {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url(../img/slider3.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 105%;
+	opacity: 0;
+}
+
+.img4 {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url(../img/slider4.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 105%;
+	opacity: 0;
+}
+
+.imgSlide {
+	transition: .8s;
+}
+
+.imgOpacity {
+	opacity: 1;
+}
+
+.sliderWrap {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sliderTitleWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 40%;	
+}
+
+.sliderTitle {
+	color: white;
+	font-size: 4rem;
+	font-family: 'IM Fell English', serif;
+	display: none;
+	padding-bottom: 2rem;
+}
+
+.titleActive {
+	display: block;
+}
+
+.aTitle {
+	font-size: 1.3rem;	
+	font-family: 'lato',sans-serif;
+	letter-spacing: .2rem;
+	background-color: #e5a544;
+	border-radius: 5px;
+	padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.sliderButtonsWrap {
+	height: 100%;
+	width: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.sliderButtons {
+	cursor: pointer;
+	padding-bottom: 1rem;
+	border-bottom: 1.8px solid rgba(255,255,255,0.4);
+}
+
+.loading {
+	width: 0%;
+	transform: translateY(1.2rem);
+	border-bottom: 1.8px solid #e5a544;
+}
+
+@keyframes load {
+	0% { width: 0%; }
+	100% { width: 100%; }
+}
+
+.loadingWidth {
+	animation: load 7s linear;
+}
+
+.sliderButtonsText {
+	color: white;
+	font-family: 'lato',sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	transition: 0.3s;
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.sliderActive {
+	opacity: 1;
+}
+
+.sliderButtons:hover h4 {
+	opacity: 1;
+} 
