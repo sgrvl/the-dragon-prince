@@ -10,7 +10,7 @@
 }
 
 .heroSlider {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	max-width: 100%;	
 	padding: 15%;	
@@ -55,10 +55,30 @@
 	width: 100%;
 	position: absolute;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: top center;
 	background-size: 105%;
 	opacity: 0;
 	transition: .8s;
+}
+
+@media screen and (max-width: 900px) {
+	.heroSlider {
+		height: 50vh;
+		padding: 15% 7% 0 7%;
+	}
+
+	.imgWrap {
+		height: 50vh;
+	}
+
+	.imgSlide {
+		background-position: top right;
+		background-size: cover;
+	}
+
+	.img3 {
+		background-position: top center;
+	}	
 }
 
 .imgOpacity {
@@ -131,6 +151,7 @@
 	display: block;
 }
 
+
 .sliderButtonsWrap {
 	height: 100%;
 	width: 15%;
@@ -142,13 +163,12 @@
 .sliderButtons {
 	cursor: pointer;
 	padding-bottom: 1rem;
+	margin-bottom: 5rem;
 	border-bottom: 1.8px solid rgba(255,255,255,0.4);
 }
 
-.loading {
-	width: 100%;
-	transform: translateY(1.1rem) scaleX(0);
-	border-bottom: 1.8px solid #e5a544;
+#btn4 {
+	margin-bottom: 0;
 }
 
 @keyframes load {
@@ -172,8 +192,20 @@
 	}
 }
 
-.loadingWidth {
-	animation: load 8s cubic-bezier(1, 1, 1, 0.9);
+@media screen and (min-width: 900px) {
+	.loading {
+		width: 100%;
+		transform: translateY(1.1rem) scaleX(0);
+		border-bottom: 1.8px solid #e5a544;
+	}
+
+	.loadingWidth {
+		animation: load 8s cubic-bezier(1, 1, 1, 0.9);
+	}
+
+	.roundButtons {
+		display: none;
+	}
 }
 
 .sliderButtonsText {
@@ -195,6 +227,47 @@
 	opacity: 1;
 } 
 
+
+@media screen and (max-width: 900px) {
+	.sliderWrap {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.sliderTitle {
+		font-size: 2.5rem;
+	}
+	
+	.sliderTitleWrap {
+		padding-top: 15%;
+		max-width: 75%;
+	}
+
+	.sliderButtonsText {
+		display: none;
+	}
+
+	.sliderButtonsWrap {
+		height: 10%;
+		width: 45%;		
+		flex-direction: row;
+	}
+
+	.sliderButtons {
+		border: none;		
+	}
+
+	.roundButtons {
+		font-size: 2.5rem;
+		color: #373736;
+	}
+
+	.roundActive {
+		color: #e5a544;
+	}
+}
+
 .feed {
 	height: 100%;
 	width: 100%;
@@ -205,6 +278,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: -15rem;
+}
+
+@media screen and (max-width: 900px) {
+	.feedWrap {
+		margin-top: 0;
+	}
 }
 
 .feedElem {
