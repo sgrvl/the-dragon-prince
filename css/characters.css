@@ -1,10 +1,217 @@
-#characters {
-	color: #d7a544;
+:root {
+	--text: #222;
 }
+
+@media screen and (min-width: 900px) {
+	.nav {
+		background-color: transparent;
+	}
+
+	.main-nav a, .search {
+		color: var(--text) !important;
+		opacity: 0.8 !important;
+	}
+
+	.main-nav a:hover, .search:hover {
+		opacity: 1 !important;
+	}
+
+	.social-search a i {
+		color: var(--text) !important;
+		opacity: 0.8 !important;
+	}
+
+	.social-search a i:after {
+		color: var(--text)!important;
+	}
+
+	#logo {
+		width: 85% !important;
+		padding: 5% !important;
+	}
+
+	#characters {
+		opacity: 1 !important;
+	}
+}	
 
 @media screen and (max-width: 900px) {
 	#characters {
 		color: white;
 		border-bottom: 2px solid white;
 	}
+}
+
+.sideNav {
+	position: absolute;
+	height: 100vh;
+	width: 100%; 
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 10;
+}
+
+.sideNav ul {
+	height: 60%;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3.5rem;
+}
+
+.navLink {
+	height: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.toolTipWrap {
+	position: absolute;
+	height: 16px;
+	width: 100px;
+	overflow: hidden;
+	transform: translateX(-7rem);
+}
+
+.toolTip {
+	color: var(--text);
+	font-size: 1.3rem;
+	font-family: 'Lato', sans-serif;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;	
+	transition: 0.5s;
+}
+
+.navLink:hover .toolTip {
+	opacity: 0.7;
+	animation: tipReveal 0.5s;
+}
+
+@keyframes tipReveal {
+	0% {
+		transform: translateX(50px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.line {
+	background-color: var(--text);
+	display: block;
+	height: 1px;
+	width: 3.5rem;
+	margin-left: 0.5rem;
+}
+
+.navDot {
+	position: absolute;
+	border-radius: 50%;
+	background-color: var(--text);
+	opacity: 0.5;
+	height: 6px;
+	width: 6px;
+	display: block;
+	z-index: 2;
+}
+
+.navLink:hover .navDot {
+	animation: dotHover 0.4s ease-in;
+}
+
+
+@keyframes dotHover {
+	0% {
+	}
+
+	50% {
+		background-color: var(--text);
+		transform: scale(1.2);
+		opacity: 1;
+	}
+
+	100% {
+	}
+}
+
+.navDotActive {
+	position: absolute;
+	background-color: transparent;
+	border: 2px solid var(--text);
+	height: 12px;
+	width: 12px;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+#fullpage {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.character {
+	height: 100vh;
+	width: 100%;
+	padding: 7% 17%;
+	display: flex;
+	flex-direction: var(--row);
+	justify-content: center;
+	align-items: center;	
+}
+
+.characWrap {
+	height: 100%;
+	display: flex;
+	flex-direction: var(--row);
+	align-items: center;
+}
+
+.text {
+	color: var(--text);
+	min-width: 50%;
+}
+
+.text h2 {
+	font-size: 6rem;
+	font-family: 'IM Fell English', serif;
+	padding-bottom: 1.8rem;
+}
+
+.text p {
+	font-size: 1.8rem;
+	font-family: 'Lato', sans-serif;
+	line-height: 3rem;
+}
+
+.character img { 
+	height: auto;
+	width: 100%;
+	object-fit: scale-down;
+	margin: 0 17%;
+}
+
+.Rayla {	
+	background-color: beige; /*temp*/
+}
+
+.Callum {
+	background-color: darkred;
+}
+
+.Bait {
+	background-color: saddlebrown;
+}
+
+.Ezran {
+	background-color: beige;
 }
