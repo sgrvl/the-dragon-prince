@@ -1,7 +1,3 @@
-:root {
-	--text: #222;
-}
-
 @media screen and (min-width: 900px) {
 	.nav {
 		background-color: transparent;
@@ -42,6 +38,10 @@
 	}
 }
 
+body {
+	overflow: hidden;
+}
+
 .sideNav {
 	position: absolute;
 	height: 100vh;
@@ -69,6 +69,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: 1rem;
+	cursor: pointer;
 }
 
 .toolTipWrap {
@@ -154,11 +155,6 @@
 	transition: 0.2s;
 }
 
-#fullpage {
-	height: 100vh;
-	overflow: hidden;
-}
-
 .character {
 	height: 100vh;
 	width: 100%;
@@ -166,14 +162,61 @@
 	display: flex;
 	flex-direction: var(--row);
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 }
 
 .characWrap {
+	padding: 7% 17%;
+	position: fixed;
 	height: 100%;
 	display: flex;
 	flex-direction: var(--row);
 	align-items: center;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.characOpacity {
+	animation: characSlide 1s;
+	opacity: 1;
+}
+
+.textOpacity {
+	animation: textSlide 1s;
+	opacity: 1;
+}
+
+@keyframes characSlide {
+	0% {
+		transform: translateY(-500px);
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes textSlide {
+	0% {
+		transform: translateX(-500px);
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0%;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .text {
@@ -201,17 +244,25 @@
 }
 
 .Rayla {	
+	position: relative;
+	z-index: 1;
 	background-color: beige; /*temp*/
 }
 
 .Callum {
+	position: relative;
+	z-index: 2;
 	background-color: darkred;
 }
 
 .Bait {
+	position: relative;
+	z-index: 3;
 	background-color: saddlebrown;
 }
 
 .Ezran {
+	position: relative;
+	z-index: 4;
 	background-color: beige;
 }

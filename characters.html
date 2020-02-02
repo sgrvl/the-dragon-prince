@@ -12,7 +12,6 @@
 	<script src="js/navbar.js"></script>	
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="js/aos.js"></script>
-	<script src="js/jquery.fullpage.js"></script>	
 	<script>		
 		/* ~~ Black fade-in on page load ~~ */
 		window.addEventListener('load',function(){
@@ -50,28 +49,28 @@
 		
 		<div class="sideNav">
 			<ul>
-				<li><a href="#Rayla" class="navLink">
+				<li><a class="navLink" onclick="document.getElementById('Rayla').scrollIntoView();">
 						<span class="navDot"></span>
 						<div class="toolTipWrap">
 							<span class="toolTip">Rayla<span class="line"></span></span>
 						</div>
 					</a>
 				</li>
-				<li><a href="#Callum" class="navLink">
+				<li><a class="navLink" onclick="document.getElementById('Callum').scrollIntoView();">
 						<span class="navDot"></span>
 						<div class="toolTipWrap">
 							<span class="toolTip">Callum<span class="line"></span></span>
 						</div>							
 					</a>
 				</li>
-				<li><a href="#Ezran" class="navLink">
+				<li><a  class="navLink" onclick="document.getElementById('Ezran').scrollIntoView();">
 						<span class="navDot"></span>
 						<div class="toolTipWrap">
 							<span class="toolTip">Ezran<span class="line"></span></span>
 						</div>							
 					</a>
 				</li>
-				<li><a href="#Bait" class="navLink">
+				<li><a class="navLink" onclick="document.getElementById('Bait').scrollIntoView();">
 						<span class="navDot"></span>
 						<div class="toolTipWrap">
 							<span class="toolTip">Bait<span class="line"></span></span>
@@ -177,7 +176,7 @@
 							<h2>RAYLA</h2>
 							<p>With wit as sharp and dangerous as her blades, Rayla is a young Moonshadow elf assassin… or, at least she calls herself one. While she may be the fastest and strongest of all of her comrades, Rayla is untested — she has never taken a life before. But now the Moonshadow assassins have a mission, and Rayla has her chance: to take vengeance for the death of the Dragon King, she must kill the human king of Katolis.</p>
 						</div>				
-						<img src="img/characters/rayla.png">
+						<img class="characImg" src="img/characters/rayla.png">
 					</div>					
 				</div>				
 			</section>
@@ -188,7 +187,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -199,7 +198,7 @@
 							<h2>EZRAN</h2>
 							<p>Ezran is the crown prince of Katolis and heir to King Harrow’s throne. Quirky and lighthearted, Ezran is an eccentric kid who has always had trouble making friends — with humans, at least. He has an amazing ability to befriend animals, and his best friend is his pet grumpy glow toad, Bait. Ezran doesn’t quite understand the weight of his crown yet, and spends his princely freedom exploring the darkest, most secret nooks and crannies of Katolis Castle (Bait lighting the way, of course).</p>
 						</div>				
-						<img src="img/characters/ezran.png">
+						<img class="characImg" src="img/characters/ezran.png">
 					</div>					
 				</div>				
 			</section>
@@ -210,7 +209,7 @@
 							<h2>BAIT</h2>
 							<p>Bait is Ezran’s pet, companion, and best friend. Glow toads are magical creatures that can shine bright in dark places but, as Bait’s sour face suggests, they’re also perpetually grumpy. Bait’s skin changes colors to reflect his ever-shifting moods, displaying his full emotional range – grumpy and tired, grumpy and confused, grumpy and hungry…</p>
 						</div>				
-						<img src="img/characters/bait.png">
+						<img class="characImg" src="img/characters/bait.png">
 					</div>					
 				</div>				
 			</section>
@@ -221,7 +220,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -232,7 +231,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -243,7 +242,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -254,7 +253,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -265,7 +264,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -276,7 +275,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -287,7 +286,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -298,7 +297,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -309,7 +308,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -320,7 +319,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -331,7 +330,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -342,7 +341,7 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
@@ -353,15 +352,12 @@
 							<h2>CALLUM</h2>
 							<p>As the adopted son of King Harrow, Callum is the “step prince” of Katolis. He’s an awkward fit for the role of a prince: Callum can hardly hold up a sword, he falls off every horse he tries to ride, and he isn’t quite sure how to act around his stepfather, the King. Nonetheless, Callum has a big heart and tries his hardest at everything, no matter how many times he falls down — he knows that one day, he’ll find his place in the world.</p>
 						</div>				
-						<img src="img/characters/callum.png">
+						<img class="characImg" src="img/characters/callum.png">
 					</div>					
 				</div>				
 			</section>
 		</div>			
 	</div>
 	<script src="js/characters.js"></script>
-	<script>
-		$('#fullpage').fullpage();
-	</script>
 </body>
 </html>
