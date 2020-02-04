@@ -174,26 +174,30 @@ body {
 	align-items: center;
 	left: 0;
 	top: 0;
+}
+
+.characImg {
 	opacity: 0;
 }
 
 .characOpacity {
-	animation: characSlide 1s;
+	animation: characSlide 0.5s;
 	opacity: 1;
 }
 
 .textOpacity {
 	animation: textSlide 1s;
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 @keyframes characSlide {
 	0% {
-		transform: translateY(-500px);
+		transform: translateY(100px);
 		opacity: 0;
 	}
 
 	50% {
+		transform: translateY(100px);
 		opacity: 0;
 	}
 
@@ -205,12 +209,12 @@ body {
 
 @keyframes textSlide {
 	0% {
-		transform: translateX(-500px);
+		transform: translateX(100px);
 		opacity: 0;
 	}
 
 	50% {
-		opacity: 0%;
+		opacity: 0;
 	}
 
 	100% {
@@ -220,17 +224,19 @@ body {
 }
 
 .text {
-	color: var(--text);
+	opacity: 0;
 	min-width: 50%;
 }
 
 .text h2 {
+	color: var(--text);
 	font-size: 6rem;
 	font-family: 'IM Fell English', serif;
 	padding-bottom: 1.8rem;
 }
 
 .text p {
+	color: var(--text);
 	font-size: 1.8rem;
 	font-family: 'Lato', sans-serif;
 	line-height: 3rem;
@@ -255,14 +261,14 @@ body {
 	background-color: darkred;
 }
 
-.Bait {
-	position: relative;
-	z-index: 3;
-	background-color: saddlebrown;
-}
-
 .Ezran {
 	position: relative;
-	z-index: 4;
+	z-index: 3;
 	background-color: beige;
+}
+
+.Bait {
+	position: relative;
+	z-index: 4;
+	background-color: saddlebrown;
 }
