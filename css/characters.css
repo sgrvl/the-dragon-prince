@@ -38,6 +38,10 @@
 	}
 }
 
+:root {
+	--text: #222;
+}
+
 body {
 	overflow: hidden;
 }
@@ -178,10 +182,11 @@ body {
 
 .characImg {
 	opacity: 0;
+	transition: 0.5s;
 }
 
 .characOpacity {
-	animation: characSlide 0.5s;
+	animation: characSlide 1s;
 	opacity: 1;
 }
 
@@ -226,6 +231,7 @@ body {
 .text {
 	opacity: 0;
 	min-width: 50%;
+	transition: 0.5s;
 }
 
 .text h2 {
